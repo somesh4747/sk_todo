@@ -169,7 +169,7 @@ function send_data() {
   }
 }
 window.setTimeout(refresh,100)
-window.setInterval(refresh,3000)
+// window.setInterval(refresh,3000)
 refresh(); // it will run on refresh
 
 function refresh() {
