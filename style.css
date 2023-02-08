@@ -1,0 +1,101 @@
+:root{
+  --main-color : rgb(156, 255, 243);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 5vw;    */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  flex-direction: column;
+  /* padding:  15px 2rem; */
+
+  background-color: rgb(126, 182, 255);
+}
+
+.to-do{
+  /* border: 1px solid rgb(17, 0, 255); */
+  
+  padding: 20px;
+  border-radius: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+@media(max-width: 450px){
+.to-do {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+  width: 90vw;
+}
+
+ 
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* width: 325px; */
+}
+.main *{
+  margin: 5px;
+
+}
+.main #btn {
+  width: 50px;
+  height: 30px;
+  background-color: rgb(50, 50, 255);
+  color: white;
+  outline: none;
+  border: 0;
+  border-radius: 6px;
+}
+.main > input[type ="text"]{
+  width: 200px;
+  height: 30px;
+}
+
+.to-do-label {
+  background-color: var(--main-color);
+  padding: 5px;
+  margin: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  /* font-size: 1em; */
+  max-height: 100vw;
+  /* word-wrap: break-word; */
+  overflow: auto;
+  text-transform: capitalize;
+
+  border-radius: 6px;
+}
+
+@media(max-width : 450px){
+  .to-do-label {
+    width: 80vw;
+  }
+}
+.to-do-label input[type="button"] {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border: none;
+
+}
+.to-do-label input[type="checkbox"] {
+  /* visibility: hidden; */
+  display: none;
+}
+
